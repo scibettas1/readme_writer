@@ -48,13 +48,17 @@ inquirer
     }])
     .then(answers => {
         const fileName = `${answers.title}.md`;
-        const { title, description, installation, usage, credits, repo, deployed, screen, license } = answers;
-        
+        const { title, icon, description, installation, usage, credits, repo, deployed, screen, license } = answers;
+      
 //if statements for the license
 
 //if the user chooses "Public Domain"
 //print [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 //at the top of the README
+
+if (license = "Public domain"){
+    let icon = "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)"
+}
 
 //if the user chooses "Permissive"
 //print [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -66,6 +70,7 @@ inquirer
 
         var write = `## ${title}
 
+${icon}
 
 ## Description
 
