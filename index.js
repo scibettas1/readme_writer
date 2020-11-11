@@ -43,7 +43,7 @@ inquirer
         type: "list",
         name: "license",
         message: "What license is the application covered under?",
-        choices: ["Public domain", "Permissive", "LGPL"]
+        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
 
     }])
     .then(answers => {
@@ -56,9 +56,7 @@ inquirer
 //print [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 //at the top of the README
 
-if (license = "Public domain"){
-    let icon = "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)"
-}
+
 
 //if the user chooses "Permissive"
 //print [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -71,6 +69,7 @@ if (license = "Public domain"){
         var write = `## ${title}
 
 ${icon}
+${badges(license)}
 
 ## Description
 
@@ -120,3 +119,9 @@ ${license}`
 
 
 
+function badges(license){
+    if (license !== "None"){
+        return '![License](https://img.shields.io/badge/license-${license}-yellow.svg)'
+    }
+    return ''
+}
