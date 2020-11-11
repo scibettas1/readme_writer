@@ -48,15 +48,18 @@ inquirer
     }])
     .then(answers => {
         const fileName = `${answers.title}.md`;
-        const { title, icon, description, installation, usage, credits, repo, deployed, screen, license } = answers;
+        const { title, description, installation, usage, credits, repo, deployed, screen, license } = answers;
       
-//if statements for the license
-
+        function badges(license){
+            //if statement for the license
+            if (license !== "None"){
+                return '![License](https://img.shields.io/badge/license-' + license + '-yellow.svg)'
+            }
+            return ''
+        }
 //if the user chooses "Public Domain"
 //print [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 //at the top of the README
-
-
 
 //if the user chooses "Permissive"
 //print [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -68,7 +71,6 @@ inquirer
 
         var write = `## ${title}
 
-${icon}
 ${badges(license)}
 
 ## Description
@@ -119,9 +121,3 @@ ${license}`
 
 
 
-function badges(license){
-    if (license !== "None"){
-        return '![License](https://img.shields.io/badge/license-${license}-yellow.svg)'
-    }
-    return ''
-}

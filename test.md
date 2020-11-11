@@ -1,5 +1,6 @@
 ## test
 
+![License](https://img.shields.io/badge/license-BSD 3-yellow.svg)
 
 ## Description
 
@@ -37,3 +38,7 @@ http://github.com - automatic!
 
 ![GitHub Logo](./test)
 Format: ![screen shot of executed project](url)
+
+## License
+
+BSD 3
