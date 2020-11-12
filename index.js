@@ -95,12 +95,12 @@ ${credits}
 
 ## Repository
 
-[GitHub](${repo})
+[${title} Repo](${repo})
 
 
 ## Deployed Project
 
-[GitHub](${deployed})
+[${title}](${deployed})
 
 
 ## Screen Shot
