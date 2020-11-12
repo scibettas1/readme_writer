@@ -24,12 +24,12 @@ example collaborators
 
 ## Repository
 
-[GitHub](example.com)
+[Example Project Repo](https://github.com/scibettas1/readme_writer/)
 
 
 ## Deployed Project
 
-[GitHub](example2.com)
+[Example Project](https://drive.google.com/file/d/1A9TpvZSDcvcvmeDBHxwfAnJMMBOvoDBI/preview)
 
 
 ## Screen Shot
