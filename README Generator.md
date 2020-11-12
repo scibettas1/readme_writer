@@ -24,12 +24,12 @@ N/A
 
 ## Repository
 
-[GitHub](https://github.com/scibettas1/readme_writer)
+[README Writer](https://github.com/scibettas1/readme_writer)
 
 
 ## Deployed Project
 
-<iframe src="https://drive.google.com/file/d/1A9TpvZSDcvcvmeDBHxwfAnJMMBOvoDBI/preview" width="640" height="480"></iframe>
+[Watch Video](https://drive.google.com/file/d/1A9TpvZSDcvcvmeDBHxwfAnJMMBOvoDBI/preview)
 
 
 ## Screen Shot
