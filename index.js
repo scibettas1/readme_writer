@@ -49,25 +49,25 @@ inquirer
     .then(answers => {
         const fileName = `${answers.title}.md`;
         const { title, description, installation, usage, credits, repo, deployed, screen, license } = answers;
-      
+
         function badges(license){
-            //if statement for the license
+
+            //if statements for the licenses
+            if (license === "MIT") {
+                var licenseCode="MIT-yellow.svg";
+            } else if (license === "APACHE 2.0") {
+                var licenseCode="Apache%202.0-blue.svg";
+            } else if (license === "GPL 3.0") {
+                var licenseCode="GPLv3-blue.svg";
+            } else if (license === "BSD 3") {
+                var licenseCode="BSD%203--Clause-blue.svg";
+            }
+            //to print the badges at the top of the page
             if (license !== "None"){
-                return '![License](https://img.shields.io/badge/license-' + license + '-yellow.svg)'
+                return '![License](https://img.shields.io/badge/license-' + licenseCode + ')'
             }
             return ''
         }
-//if the user chooses "Public Domain"
-//print [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
-//at the top of the README
-
-//if the user chooses "Permissive"
-//print [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-//at the top of the README
-
-//if the user chooses "LGPL"
-//print [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
-//at the top of the README
 
         var write = `## ${title}
 
@@ -95,20 +95,18 @@ ${credits}
 
 ## Repository
 
-http://github.com - automatic!
 [GitHub](${repo})
 
 
 ## Deployed Project
 
-http://github.com - automatic!
 [GitHub](${deployed})
 
 
 ## Screen Shot
 
-![GitHub Logo](./${screen})
-Format: ![screen shot of executed project](url)
+![GitHub Logo](/${screen})
+
 
 ## License
 

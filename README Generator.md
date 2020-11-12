@@ -1,11 +1,10 @@
 ## README Generator
 
-undefined
-![License](https://img.shields.io/badge/license-MIT-yellow.svg)
+
 
 ## Description
 
-a README.md generator using javascript and node
+REEADME  generator that uses inquirer to ask questions and print the answers to a README document.
 
 
 ## Installation
@@ -25,21 +24,19 @@ N/A
 
 ## Repository
 
-http://github.com - automatic!
 [GitHub](https://github.com/scibettas1/readme_writer)
 
 
 ## Deployed Project
 
-http://github.com - automatic!
 [GitHub](N/A)
 
 
 ## Screen Shot
 
-![GitHub Logo](./screen_shot.png)
-Format: ![screen shot of executed project](url)
+![GitHub Logo](/images/screen_shot.png)
+
 
 ## License
 
-MIT
+None
